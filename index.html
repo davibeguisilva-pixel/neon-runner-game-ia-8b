@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <title>Neon Runner: Cyber Slash</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="wrap">
+    <div id="stage">
+      <canvas id="cv"></canvas>
+      <div class="screen" id="menu">
+        <h1>
+          <span class="a">NEON RUNNER</span>
+          <span class="b">CYBER SLASH</span>
+        </h1>
+        <button id="bStart">Iniciar</button>
+        <div class="help">
+          <b>W / ↑ / Espaço</b><span>Pular (pulo duplo no ar)</span>
+          <b>S / ↓</b><span>Deslizar (no ar: queda rápida)</span>
+          <b>J / Clique</b><span>Katana: destrói inimigos e lasers disparados</span>
+        </div>
+      </div>
+      <div class="screen hide" id="over">
+        <h2>GAME OVER</h2>
+        <div class="stats">
+          <div>Pontuação<b id="oS">0</b></div>
+          <div>Moedas<b id="oC">0</b></div>
+          <div>High Score<b id="oH">0</b></div>
+        </div>
+        <p id="rec"></p>
+        <button id="bRetry">Tentar Novamente</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
